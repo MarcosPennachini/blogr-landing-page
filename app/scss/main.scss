@@ -1,0 +1,20 @@
+@use "abstract";
+
+body {
+  background: repeating-conic-gradient(
+    from 180deg at 50% 50%,
+    #00ffab 0%,
+    #000066 100%
+  );
+  background-blend-mode: normal;
+
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,19 @@
+$colors: (
+  primary: (
+    red-100: hsl(355, 100%, 74%),
+    red-200: hsl(356, 100%, 66%),
+    blue: hsl(208, 49%, 24%),
+  ),
+  neutral: (
+    white: hsl(0, 0%, 100%),
+    blue-100: hsl(240, 2%, 79%),
+    blue-300: hsl(207, 13%, 34%),
+    blue-500: hsl(240, 10%, 16%),
+  ),
+  background: (
+    intro-red-100: hsl(13, 100%, 72%),
+    intro-red-200: hsl(353, 100%, 62%),
+    body-blue-100: hsl(237, 23%, 32%),
+    body-blue-200: hsl(237, 17%, 21%),
+  ),
+);

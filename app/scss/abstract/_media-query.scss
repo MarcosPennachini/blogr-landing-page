@@ -1,6 +1,7 @@
 $breakpoints: (
   small: 23.475em,
-  large: 90em,
+  medium: 43em,
+  large: 75em,
 );
 
 @mixin media-query($key) {

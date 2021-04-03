@@ -2,18 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="dist/main.css">
   
-  <title>Frontend Mentor | [Blogr]</title>
+  <title>Blogr Landing Page</title>
 </head>
 <body>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__menu">
+        <div class="header__menu--logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="header__menu--hamburger">
+          <img src="./images/icon-hamburger.svg" alt="hamburger-button" id="menu">
+          <img src="./images/icon-close.svg" alt="close-button" id="close">
+        </div>
+
+        <nav class="header__nav">
+          <div class="header__nav--container">
+
+            <div class="accordion-element header__nav__element">
+              <div class="header__nav__element--title">
+                <h4>Product</h4>
+                <img src="./images/icon-arrow-light.svg" alt="arrow light" class="header__nav__element--arrow-light">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow dark" class="header__nav__element--arrow-dark">
+              </div>
+              <div class="accordion-body header__nav__element--links hide">
+                <a href="#">Implementations</a>
+                <a href="#">Prices</a>
+                <a href="#">Development</a>
+              </div>
+            </div>
+  
+            <div class="accordion-element header__nav__element">
+              <div class="header__nav__element--title">
+                <h4>Company</h4>
+                <img src="./images/icon-arrow-light.svg" alt="arrow light" class="header__nav__element--arrow-light">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow dark" class="header__nav__element--arrow-dark">
+              </div>
+              <div class="accordion-body header__nav__element--links hide">
+                <a href="#">About Us</a>
+                <a href="#">Team</a>
+              </div>
+            </div>
+  
+            <div class="accordion-element header__nav__element">
+              <div class="header__nav__element--title">
+                <h4>Connect</h4>
+                <img src="./images/icon-arrow-light.svg" alt="arrow light" class="header__nav__element--arrow-light">
+                <img src="./images/icon-arrow-dark.svg" alt="arrow dark" class="header__nav__element--arrow-dark">
+              </div>
+              <div class="accordion-body header__nav__element--links hide">
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+  
+            <hr width="100%">
+
+            <div class="login-container">
+              <a href="#" class="login-container__log">Login</a>
+              <a class="btn btn-sign" href="#">Sign Up</a>
+            </div>
+          </div>
+          
+        </nav>
+
+      </div>
+
+      <div class="hero">
+        <div class="hero__title">
+          <h1>A modern publishing platform</h1>
+        </div>
+        <div class="hero__subtitle">
+          <h4>Grow your audience and build your online brand</h4>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn-normal" href="#">Start for Free</a>
+          <a class="btn btn-outlined" href="#">Learn More</a>
+        </div>
+      </div>
+      
+    </div>
+    
+  </header>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+  <script src="./dist/main.js"></script>
+  
 </body>
 </html>

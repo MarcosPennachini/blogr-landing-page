@@ -1,4 +1,5 @@
 @use 'colors' as *;
+@use 'typography' as *;
 
 :root {
   @each $color, $shades in $colors {
@@ -6,4 +7,39 @@
       --clr-#{$color}-#{$shade}: #{$value};
     }
   }
+}
+
+body {
+  min-height: 100vh;
+  color: var(--clr-neutral-blue-300);
+}
+
+.container {
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: $font-overpass;
+  font-weight: 700;
+  text-align: center;
+}
+
+h4 {
+  font-family: $font-overpass;
+  font-weight: 300;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin: 1rem 0;
 }

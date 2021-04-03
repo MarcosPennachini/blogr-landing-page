@@ -1,15 +1,6 @@
 @use "abstract";
-
-body {
-  background: repeating-conic-gradient(
-    from 180deg at 50% 50%,
-    #00ffab 0%,
-    #000066 100%
-  );
-  background-blend-mode: normal;
-
-  color: #fff;
-}
+@use 'components';
+@use 'layout';
 
 .attribution {
   font-size: 11px;

@@ -12,6 +12,7 @@
 body {
   min-height: 100vh;
   color: var(--clr-neutral-blue-300);
+  font-family: $font-overpass;
 }
 
 .container {
@@ -22,14 +23,34 @@ body {
 
 h1 {
   font-family: $font-overpass;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
+}
+
+h2 {
+  font-family: $font-overpass;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-family: $font-overpass;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--clr-primary-blue);
 }
 
 h4 {
   font-family: $font-overpass;
   font-weight: 300;
   text-align: center;
+}
+
+p {
+  font-family: $font-overpass;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: var(--clr-neutral-blue-300);
 }
 
 li {

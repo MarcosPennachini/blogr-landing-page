@@ -120,6 +120,11 @@
         }
       }
 
+      .rotate {
+        transition: transform 250ms ease-in-out;
+        transform: rotate(180deg);
+      }
+
       &--arrow-light {
         display: none;
         transition: all 200ms ease-in-out;
@@ -156,6 +161,7 @@
 
         a {
           color: var(--clr-neutral-blue-300);
+          line-height: 2;
 
           &:hover,
           :active,

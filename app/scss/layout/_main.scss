@@ -107,6 +107,7 @@ main {
 
     height: 70vh;
     margin-top: 12rem;
+    margin-bottom: 2rem;
     padding: 1rem 0;
     display: flex;
     align-items: center;
@@ -120,6 +121,7 @@ main {
           var(--clr-background-body-blue-100)
         );
       height: 50vh;
+      margin-bottom: 12rem;
     }
 
     &--grid {
@@ -175,6 +177,80 @@ main {
           font-size: 0.875rem;
           text-align: left;
         }
+      }
+    }
+  }
+
+  .section-three {
+    padding: 0.875rem 0;
+
+    &--grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto auto;
+      grid-gap: 1.9rem;
+
+      @include abs.media-query(medium) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        position: relative;
+        overflow: visible;
+      }
+    }
+
+    &__first {
+      @include abs.media-query(medium) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+    }
+
+    &__second {
+      @include abs.media-query(medium) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+      }
+    }
+
+    &__image-mobile {
+      object-fit: cover;
+      height: 95vw;
+
+      @include abs.media-query(medium) {
+        display: none;
+      }
+    }
+
+    &__image-desktop {
+      display: none;
+      object-fit: cover;
+
+      @include abs.media-query(medium) {
+        display: block;
+        position: absolute;
+        height: 50vw;
+        top: 0;
+        left: 0;
+        transform: translate(-40%, -20%);
+      }
+    }
+
+    article > h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+
+      @include abs.media-query(medium) {
+        font-size: 1.4rem;
+        text-align: left;
+      }
+    }
+
+    .text {
+      text-align: center;
+
+      @include abs.media-query(medium) {
+        text-align: left;
+        font-size: 0.875rem;
       }
     }
   }

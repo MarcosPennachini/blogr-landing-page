@@ -1,7 +1,7 @@
 @use 'abstract' as abs;
 
 main {
-  padding: 3rem 0;
+  padding: 6.5rem 0;
   overflow: hidden;
 
   .section-one {
@@ -202,6 +202,7 @@ main {
       @include abs.media-query(medium) {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
+        max-width: 45ch;
       }
     }
 
@@ -209,6 +210,7 @@ main {
       @include abs.media-query(medium) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        max-width: 45ch;
       }
     }
 
@@ -228,7 +230,7 @@ main {
       @include abs.media-query(medium) {
         display: block;
         position: absolute;
-        height: 50vw;
+        height: 550px;
         top: 0;
         left: 0;
         transform: translate(-40%, -20%);

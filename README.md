@@ -5,7 +5,7 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 ## Table of contents
 
 - [Screenshot](#screenshot)
-- [Links](#links)
+- [Live site link](#link-site-URL)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -14,10 +14,9 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 ![Screenshot](./screenshot.png)
 
-## Links
+## Live Site URL:
 
-- Solution URL: [GitHub](https://github.com/MarcosPennachini/blogr-landing-page)
-- Live Site URL: [Live demo]()
+[Live demo](https://blogr-landing-page-sigma.vercel.app/)
 
 ## My process
 

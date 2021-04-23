@@ -4,7 +4,6 @@ sass.compiler =  require('sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-const htmlmin = require('gulp-htmlmin');
 const browsersync = require('browser-sync').create();
 
 function scssTask(){
@@ -16,12 +15,6 @@ function scssTask(){
     .pipe(sass())
     .pipe(postcss(plugins))
     .pipe(dest('./dist', {sourcemaps: '.'}));
-}
-
-function htmlTask() {
-  return src('./*.html')
-    .pipe(htmlmin( { collapseWhitespace: true } ))
-    .pipe(dest('./dist'));
 }
 
 function browsersyncServe(cb){
@@ -39,12 +32,11 @@ function browsersyncReload(cb){
 }
 
 function watchTask(){
-  watch('*.html', series(htmlTask, browsersyncReload));
+  watch('*.html', browsersyncReload);
   watch(['app/**/*.scss'], series(scssTask, browsersyncReload));
 }
 
 exports.default = series(
-  htmlTask,
   scssTask,
   browsersyncServe,
   watchTask
